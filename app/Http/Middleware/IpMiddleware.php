@@ -31,11 +31,11 @@ class IpMiddleware
             }
             return $ip;
         }
-        //122.176.111.243
+        
         if (getRealIpAddr() != "122.162.77.124"  ) {
             // here insted checking single ip address we can do collection of ip
             //address in constant file and check with in_array function
-            return redirect('http://www.olmeccosmeticsurgery.com/meet-your-surgeon/');
+            return redirect('');
         }
 
         return $next($request);
